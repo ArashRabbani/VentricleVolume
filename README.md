@@ -14,6 +14,10 @@ When segmented images of the left ventricle cavity are obtained, the simplest ap
 
 ![](Images/2.PNG)
 
+Here is an example result that shows the changes in the volume of three heart elements during a full cycle starting from end diastole. Ruuning the code Main.m in this repository will regenerate and display this figure. 
+
+![](Images/3.PNG)
+
 ## How to use?
 A 4-D array the represents short-axis slices of the heart in different time and vertical locations is required. In this repository the file is aclled 'raw.mat' with dimentions representing height, width, length (slices), and time frames, respectively; for example [226,256,10,30]. If you are using python, you can convert a numpy array into a mat file using scipy.io package. In addition, spatial resolution of the image is required to demonstrate the vocels size in x, y, and z directions with the unit of milimeter/pixel; for example [1,1,10]. Initially run the Main.py file using python 3 to above to generate 'seg.mat' which is the segmentation of the raw image. Then run Main.m using MATLAB 2020 to above, to generate an excel file named 'Result.xlsx' that contains the volumes of the left ventricle, right ventricle and myocardium in different dimentionless time frames during a complete cardiac cycle starting from end of diastole. In addition, a gif animation, like the one above will be created on your current directory named 'Final.gif'. Here is the list of python packages required to run this repository:
 * numpy 
@@ -27,7 +31,7 @@ Also, this is the list of MATLAB toolboxes required to run Main.m:
 * Image processing toolbox
 * Statistics toolbox
 
-If you are just intrested in segmentations and not the volume estimation, they are stored in 'seg.mat' with 4 labels of 0,1,2,3 respectively representing, right ventricle (RV), myocardium (MY), left ventricle (LV), and background (BG). 
+If you are just intrested in segmentations and not the volume estimation, they are stored in 'seg.mat' with 4 labels of 0,1,2, and 3 respectively representing, right ventricle (RV), myocardium (MY), left ventricle (LV), and background (BG). 
 
 ## Citation
 Rabbani, A. et al. Image-based estimation of the left ventricle cavity volume using deep learning and Gaussian process with cardio-mechanical applications. 
