@@ -36,14 +36,15 @@ Also, this is the list of MATLAB toolboxes required to run Main.m:
 If you are just interested in segmentations and not the volume estimation, they are stored in 'seg.mat' with 4 labels of 0,1,2, and 3 respectively representing, the right ventricle (RV), myocardium (MY), left ventricle (LV), and background (BG).  
 
 ## Citation
-@article{RABBANI2023102203,
-title = {Image-based estimation of the left ventricular cavity volume using deep learning and Gaussian process with cardio-mechanical applications},
-journal = {Computerized Medical Imaging and Graphics},
-volume = {106},
-pages = {102203},
-year = {2023},
-issn = {0895-6111},
-doi = {https://doi.org/10.1016/j.compmedimag.2023.102203},
-url = {https://www.sciencedirect.com/science/article/pii/S0895611123000216},
-author = {Arash Rabbani and Hao Gao and Alan Lazarus and David Dalton and Yuzhang Ge and Kenneth Mangion and Colin Berry and Dirk Husmeier},
+<br>
+@article{RABBANI2023102203,<br>
+title = {Image-based estimation of the left ventricular cavity volume using deep learning and Gaussian process with cardio-mechanical applications},<br>
+journal = {Computerized Medical Imaging and Graphics},<br>
+volume = {106},<br>
+pages = {102203},<br>
+year = {2023},<br>
+issn = {0895-6111},<br>
+doi = {https://doi.org/10.1016/j.compmedimag.2023.102203},<br>
+url = {https://www.sciencedirect.com/science/article/pii/S0895611123000216},<br>
+author = {Arash Rabbani and Hao Gao and Alan Lazarus and David Dalton and Yuzhang Ge and Kenneth Mangion and Colin Berry and Dirk Husmeier}<br>
 }
