@@ -3,7 +3,7 @@ Image-based estimation of the heart ventricular volume using deep learning and G
 
 In this repository, an image-based method has been developed to estimate the volume of the heart ventricles cavity using cardiac magnetic resonance (CMR) imaging data. Deep machine learning and the Gaussian process have been applied to bring the estimations closer to the values manually measured. The included example data is from ACDC challenge for disease diagnostic and segmentation of heart images ([Link](https://acdc.creatis.insa-lyon.fr/)). 
 
-![](Final.gif)
+![](Images/Final2.gif)
 
 ## How it works?
 Deep learning semantic segmentation of short-axis CMR images has been performed based on a publicly available cine image dataset known as the Automated Cardiac Diagnosis Challenge (ACDC), as mentioned. The dataset has been initially published in 2017 and its training data include CMR scans of 100 patients with 5 groups of normal, myocardial infarction, dilated cardiomyopathy, hypertrophic cardiomyopathy, and dilated right ventricle.The structure of the deep learning model that we have used for segmentation is known as U-net, which is used repeatedly for similar purposes in the literature. To improve the accuracy of segmentation, we have used two U-net structures in a sequential manner as depicted in the figure below. These two trained models are stored in hdf format as 'Model1.h' and 'Model2.h'. They can be loaded into the code using keras.models.load_model() method. The output of the first U-net is stacked to the original input image to be the input for the second U-net.  
